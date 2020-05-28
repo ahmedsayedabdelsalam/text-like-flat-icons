@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ahmed Sayed</title>
+`   <style>
+      *{
+        font-family: arial;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+      div{
+          background: #ff772f;
+          width: 900px;
+          height: 300px;
+          margin: 20px auto;
+          overflow: hidden;
+          padding: 100px;
+          border: 5px solid #000;
+      }
+      h1{
+        text-align: center;
+        font-size:80px;
+        color:#FFF;
+       }
+    </style>
+  </head>
+  <body>
+    <div id="background">
+        <h1 id="name"></h1>
+    </div>
+    <script>
+        var name = prompt("please Enter your name :) ");
+        document.getElementById('name').innerHTML= name;
+        var color = document.getElementById('background').style.backgroundColor;
+        var x=2; var y=2; var z='';
+        for(var i=0;i<100;i++){
+          z= z + (x+'px '+y+'px #c15921,');  
+          x+=2;
+          y+=2;
+          };
+        z= z + (x+'px '+y+'px #c15921');
+        document.getElementById('name').style.textShadow = z;
+    </script>
+  </body>
+</html>

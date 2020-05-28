@@ -1,0 +1,297 @@
+/* Start Global */
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Tahoma;
+}
+.fixclear{
+    clear:both;
+}
+/*End Global*/
+
+/* Start Header */
+.main{
+    background-color:#333;
+    color:#EEE;
+    text-align:center;
+    padding:10px;
+}
+/* End Header */
+
+/* Start Navigation */
+nav{
+    background-color:#DDD;
+}
+nav ul{
+    padding:20px;
+    text-align:center;
+}
+nav ul li{
+    display:inline-block;
+}
+nav ul li:after{
+    content:" |";
+}
+nav ul li:last-child:after{
+    content:"";
+}
+/* End Navigation */
+
+/* Start Main */
+main{
+    background-color:#EEE;
+    padding:10px;
+}
+main p{
+    text-align:center;
+}
+main p span{
+    color:#333;
+    font-weight:bold;
+}
+main p span mark{
+    background-color:#F60;
+}
+/* End Main */
+
+/* Start Articles */
+.post{
+    width:70%;
+    float:left;
+}
+.post article{
+    background-color:#F6F6F6;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+.post article header{
+    background-color:#E2E2E2; 
+    padding:10px;
+}
+.post article section{
+    padding:10px;
+}
+.post article section div{
+    width:200px;
+}
+.post article section .fixed{  /*dimention section*/
+    background-color:#080;
+    color:#FFF;
+    padding: 10px;
+    position: fixed;
+    right:0;
+    bottom:0;
+}
+.post article section .cont1{   /*dimention section*/
+    background-color:#535353;
+    padding: 10px;
+    width: 600px;
+    height: 200px;
+    color: #FFF;
+    text-align: right;
+}
+.post article section .cont2{   /*dimention section*/
+    background-color:#adadad;
+    padding: 10px;
+    width: 400px;
+    height: 80px;
+    position: relative;
+    top:30px;
+    left: 30px;
+}
+.post article section .absolute{   /*dimention section*/
+    background-color:#080;
+    color:#FFF;
+    padding: 10px;
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+.post article section .float{   /*float section*/
+    width: 100px;
+    margin: 5px;
+    background-color: #419b41;
+    display: inline-block;
+}
+.post article section .fLeft{   /*float section*/
+    float: left;
+}
+.post article section .fRight{   /*float section*/
+    float: right;
+}
+.post article section .clearFloat{   /*float section*/
+    clear: both;
+}
+.post article section ul{
+    padding: 20px;
+    list-style: disc url("../icons/arrow.png") outside;
+}
+.post article section ul li{
+    border: 1px solid #000;
+}
+.post article section ol{
+    padding: 20px;
+    list-style: upper-roman;
+}
+.post article section .container{
+    width: 100%;
+    margin: 10px auto;
+    background-color: #00F;
+    padding: 10px;
+}
+.post article section .container .box{
+    background-color:#F00;
+    color:#FFF;
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+}
+.post article section .container p{
+    margin: 10px; /*margin collapse */
+    padding: 10px;
+    background-color: #0F0;
+    color: #FFF;
+}
+.post article section .container .border{
+    background-color:#DDD;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    border: 5px solid #000;
+}
+.post article section .overflow{
+    height: 100px;
+    background-color: #00ffff;
+    overflow: auto;
+}
+.post article .z-index{
+    position: relative;
+    height: 150px;
+}
+.post article .z-index div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.post article .z-index .index-1{
+    background-color: #F00;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.post article .z-index .index-2{
+    background-color: #080;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+.post article .z-index .index-3{
+    background-color: #00F;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+.post h1#css3{
+    margin: 0 20px;
+    font-size: 40px;
+    background-color: #F00;
+    color: #FFF;
+    text-align: center;
+}
+.post article section div.borderRadius{
+    width:200px;
+    height: 200px;
+    margin: 20px auto;
+    background-color: #DDD;
+    -webkit-border-radius: 10px 100px;
+    -moz-border-radius: 10px 100px;
+    -o-border-radius: 10px 100px;
+    -ms-border-radius: 10px 100px;
+    border-radius: 10px 100px;
+       /* herozontal+- vertical+- blur+ spread+ color inset or outsrt */
+    -webkit-box-shadow: -10px -10px 10px #F00 inset, 
+                -10px -10px 10px #00F,
+                20px 20px 10px #080;
+    -moz-box-shadow: -10px -10px 10px #F00 inset, 
+                -10px -10px 10px #00F,
+                20px 20px 10px #080;
+    -o-box-shadow: -10px -10px 10px #F00 inset, 
+                -10px -10px 10px #00F,
+                20px 20px 10px #080;
+    -ms-box-shadow: -10px -10px 10px #F00 inset, 
+                -10px -10px 10px #00F,
+                20px 20px 10px #080;
+    box-shadow: -10px -10px 10px #F00 inset, 
+                -10px -10px 10px #00F,
+                20px 20px 10px #080;
+}
+.post article section div.OV{
+    text-indent: 20px;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.post article section div.WW{
+    word-wrap: break-word;
+}
+/* End Articles */
+
+/* Start Aside */
+aside{
+    width:30%;
+    float:right;
+    margin:20px auto;
+}
+aside section{
+    border:1px solid #CCC;
+    background-color:#EEE;
+    padding:10px;
+    margin-bottom:10px;
+}
+aside section h3{
+    background-color:#D6D6D6;
+    padding:10px;
+    margin-bottom:10px;
+}
+aside section ul{
+    list-style:none;
+}
+aside section ul li{
+    line-height: 1.6;
+}
+.post article section fieldset{
+    padding:10px;
+}
+.post article section fieldset legend{
+    font-weight:bold;
+}
+.post article section a.link{
+    color:red
+}
+.post article section a.link:hover{
+    color:blue;
+    font-weight: bold;
+    text-decoration:line-through;
+}
+.post article section a:active{
+    color: green;
+    text-decoration: none;
+    font-weight: normal;
+}
+/*  End Aside */
+
+/* Start Footer */
+footer{
+    background-color:#333;
+    color:#EEE;
+    text-align:center;
+    padding:10px;
+}
+/* End Footer  */
